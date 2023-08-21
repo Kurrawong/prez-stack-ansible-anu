@@ -1,0 +1,3 @@
+prez_ui:
+  enabled_prezs: CatPrez,VocPrez
+  prez_api_base_url: https://api.anu.dev.kurrawong.ai
