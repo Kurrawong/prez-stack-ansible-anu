@@ -22,6 +22,8 @@
           SPARQL_ENDPOINT: http://0.0.0.0:3030/prez/sparql
           SPARQL_USERNAME: "{{ vault.fuseki.username }}"
           SPARQL_PASSWORD: "{{ vault.fuseki.password }}"
+          SPARQL_TIMEOUT: 300
+          DISABLE_PREFIX_GENERATION: "true"
         state: present
         generate_systemd:
           path: /etc/systemd/system/
