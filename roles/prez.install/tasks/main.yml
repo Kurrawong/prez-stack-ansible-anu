@@ -24,6 +24,7 @@
           SPARQL_PASSWORD: "{{ vault.fuseki.password }}"
           SPARQL_TIMEOUT: 300
           DISABLE_PREFIX_GENERATION: "true"
+          LABEL_PREDICATES: ["https://schema.org/headline","https://schema.org/name","http://purl.org/dc/elements/1.1/title","http://purl.org/dc/terms/title","http://www.w3.org/2000/01/rdf-schema#label","http://www.w3.org/2004/02/skos/core#prefLabel"]
         state: present
         generate_systemd:
           path: /etc/systemd/system/
