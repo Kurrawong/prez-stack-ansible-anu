@@ -17,7 +17,7 @@
         entrypoint: /bin/bash
         command:
           - -c
-          - uvicorn prez.app:app --host=0.0.0.0 --port=8000 --proxy-headers
+          - uvicorn prez.app:assemble_app --factory --host=0.0.0.0 --port=8000 --proxy-headers
         env:
           SPARQL_ENDPOINT: http://0.0.0.0:3030/prez/sparql
           SPARQL_USERNAME: "{{ vault.fuseki.username }}"
