@@ -1,3 +1,7 @@
+> [!WARNING]
+> THIS REPOSITORY HAS BEEN SUPERCEDED  
+> please see https://github.com/Kurrawong/anufnp-infra for future work
+
 # Australian National University Ansible Prez Stack
 
 An Ansible playbook and roles to manage Debian cloud VMs running the Prez Stack.
